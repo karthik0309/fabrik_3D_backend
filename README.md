@@ -1,5 +1,5 @@
 ## Fabrick_task backend
-
+## deployed [here](https://fabrik-task-backend.herokuapp.com/get)
 ### Installation
 - Clone the git repo 
 - Now run npm install (to install the packages and dependencies)
