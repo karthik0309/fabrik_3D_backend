@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "cloudinary": "^1.28.1",
     "cors": "^2.8.5",
