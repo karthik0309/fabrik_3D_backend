@@ -22,15 +22,6 @@ app.use(cors());
 
 app.use("/",uploadRouter)
 
-if (process.env.NODE_ENV === 'production') {
-    // Set static folder
-    app.use(express.static('/BackEnd/client/build'));
-  
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname,'BackEnd', 'client', 'build', 'index.html'));
-    });
-}
-
 app.listen(port,()=>{
     console.log(`Running app at port: ${port}`)
 })
