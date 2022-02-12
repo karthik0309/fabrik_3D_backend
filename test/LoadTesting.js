@@ -13,7 +13,7 @@
 //         { duration: '2m', target: 500 }, 
 //         { duration: '5m', target: 400 }, 
 //         { duration: '10m', target: 0 }, 
-//       ],
+//       ]
 // }
 
 // export default ()=>{

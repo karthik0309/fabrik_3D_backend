@@ -25,10 +25,10 @@ app.use("/",uploadRouter)
 
 if (process.env.NODE_ENV === 'production') {
     // Set static folder
-    app.use(express.static('/BackEnd/client/build'));
+    app.use(express.static('/fabrik_backend/fabrik_frontend/build'));
   
     app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname,'BackEnd', 'client', 'build', 'index.html'));
+      res.sendFile(path.resolve(__dirname,'fabrik_backend', 'fabrik_frontend', 'build', 'index.html'));
     });
 
 }
