@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const uploadRouter = require('./router/Upload')
 const app  = express()
-const port = process.env.PORT || 3001 
+const port = process.env.PORT || 3000 
 dotenv.config()
 
 
@@ -23,5 +23,5 @@ app.use(cors());
 app.use("/",uploadRouter)
 
 app.listen(port,()=>{
-    console.log(`Running app at port: ${port}`)
+    console.log("server listening on port %d in %s mode", this.address().port, app.settings.env)
 })
