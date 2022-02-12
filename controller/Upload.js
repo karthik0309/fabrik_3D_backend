@@ -40,12 +40,6 @@ exports.getModel=async(req,res)=>{
 exports.postModel=async(req,res)=>{
     try{
         const {file,name,price} = req.body
-
-        if(!name || !price){
-            return res.status(400).json({
-                error: "Please include all fields"
-            });
-        }
         
         const uploadedResponse = await cloudinary.uploader.upload(file,{upload_preset:"fabrik_images"})
 
@@ -58,7 +52,7 @@ exports.postModel=async(req,res)=>{
         model.save((err, model) => {
             if (err) {
                 return res.status(400).json({
-                  error: "NOT able to save category in DB"
+                  err
                 });
             }
             res.json({ model });

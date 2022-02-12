@@ -8,7 +8,7 @@ const {
 
 router.param("modelId",getModelById)
 router.get("/get",getAllModels)
-router.get("/get:modelId",getModel)
+router.get("/get/:modelId",getModel)
 router.post("/post",postModel)
 
 module.exports = router
