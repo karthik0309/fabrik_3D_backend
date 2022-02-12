@@ -33,6 +33,6 @@ if (process.env.NODE_ENV === 'production') {
 
 }
 
-app.listen(port,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     
 })

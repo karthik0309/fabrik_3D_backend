@@ -13,14 +13,12 @@
   },
   "engines": {
     "node": "14.10.1",
-    "npm":"6.14.8"
+    "npm": "6.14.8"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
-    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production"
+    "start": "node server.js"
   },
   "author": "Karthik",
   "license": "ISC"
