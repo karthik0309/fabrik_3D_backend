@@ -1,4 +1,4 @@
-const Models=require('../models/Upload')
+const Models=require('../models/upload')
 const {cloudinary} = require('../utils/Cloudinary')
 
 exports.getModelById=async(req,res,next,id)=>{
